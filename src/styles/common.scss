@@ -1,0 +1,36 @@
+// $color-brand: #0081ff;
+/* Input */
+$at-input-font-size: $font-size-base;
+
+// Tabs
+$at-tabs-color: #fff;
+
+.at-switch {
+  padding: 0;
+  position: static;
+}
+
+.at-switch__title {
+  font-size: $font-size-base !important;
+}
+.official-account {
+  &__margin {
+    &--sm {
+      margin: $padding-sm;
+    }
+    &--base {
+      margin: $padding-base;
+    }
+    &--lg {
+      margin: $padding-lg;
+    }
+  }
+}
+
+// AtTabs
+$at-tabs-color-active: $c-theme;
+$at-tabs-font-size: $font-size-base !default;
+$at-tabs-line-height: 1PX !default;
+
+// checkBox
+$at-checkbox-icon-color: $c-theme;

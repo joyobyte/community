@@ -1,0 +1,39 @@
+$background-white: #fff;
+$background-gray-light: #FAFAFA;
+$background-gray-deep: #EEEEEE;
+$background-black-opacity: rgba(8, 8, 8, 1);
+// 文字颜色
+$font-black: #111111;
+$font-gray-deep: #666666;
+$font-gray-light: #999999;
+
+// 文字大小
+$font-size-lg: 36px;
+$font-size-base: 28px;
+$font-size-sm: 24px;
+
+/* Line Height */
+$line-height-base: 1; // 单行
+$line-height-en: 1.3; // 英文多行
+$line-height-zh: 1.5; // 中文多行
+
+// 内间距
+$padding-lg : 30px; // containers
+$padding-base : 16px; // small containers and buttons
+$padding-sm : 12px; // Form controls and items
+
+// 文字粗细
+$font-weight-base: 400;
+$font-weight-bold: 500;
+
+// 边框
+$border-color-base: #999999;
+$border-color-split: #EEEEEE;
+$border-radius-lg: 20px;
+$border-radius-base: 16px;
+$border-radius-sm: 8px;
+
+// 层级
+$z-index-base: 10;
+$z-index-modal: 20;
+$z-index-heighest: 1000;

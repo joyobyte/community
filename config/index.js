@@ -22,6 +22,15 @@ const config = {
         'transform-class-properties',
         'transform-object-rest-spread'
       ]
+    },
+    sass: {
+      resource: require('path').resolve(__dirname, '..', 'src/styles/index.scss'),
+      // OR
+      // resource:  [
+      //   path.resolve(__dirname, '..', 'src/styles/variable.scss'),
+      //   path.resolve(__dirname, '..', 'src/styles/mixin.scss')
+      // ],
+      projectDirectory: require('path').resolve(__dirname, '..')
     }
   },
   defineConstants: {

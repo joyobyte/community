@@ -1,0 +1,102 @@
+/**
+ * 说明，此文件盗版自CPASS，copy大法好，要谢谢cpass
+ */
+//--------------
+/* 动画效果放到这里， 统一出现的动画 */
+/**
+ * （针对弹窗）向上滑动，从$startBottom位置滑动到$endBottom，$duration为过渡时间
+ */
+@mixin slideUp ($duration: .3s) {
+  animation: slideUp $duration ease-in-out;
+  @keyframes slideUp {
+    from { transform: translate3d(0, 100%, 0); }
+    to   { transform: translate3d(0, 0, 0);}
+  }
+}
+/**
+ * 向下滑动
+ */
+@mixin slideDown ($duration: .3s) {
+  animation: slideDown $duration ease-in-out;
+  @keyframes slideDown {
+    from { transform: translate3d(0, -100%, 0); }
+    to   { transform: translate3d(0, 0, 0);}
+  }
+}
+/**
+ * 向左滑动
+ */
+@mixin slideLeft ($duration: .3s) {
+  animation: slideLeft $duration ease-in-out;
+  @keyframes slideLeft {
+    from { transform: translate3d(100, 0, 0); }
+    to   { transform: translate3d(0, 0, 0);}
+  }
+}
+/**
+ * 向右滑动
+ */
+@mixin slideRight ($duration: .3s) {
+  animation: slideRight $duration ease-in-out;
+  @keyframes slideRight {
+    from { transform: translate3d(-100%, 0, 0); }
+    to   { transform: translate3d(0, 0, 0);}
+  }
+}
+/**
+ * （针对弹窗）bounce in
+ */
+@mixin bounceIn ($duration: 300ms) {
+  opacity: 0;
+  animation-name: bounceIn;
+  animation-duration: $duration;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8) translate3d(0, 0, 0);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) translate3d(0, 0, 0);
+    }
+  }
+}
+/**
+ * 渐现
+ */
+@mixin animateOpacity () {
+  animation: animOpacity .5s;
+  @keyframes animOpacity{
+    0% {opacity: 0;}
+    50% {opacity: .8;}
+    100% {opacity: 1;}
+  }
+}
+/**
+ *  心跳
+ */
+ @mixin animatePulse {
+   animation:  animPulse .5s;
+   @keyframes animPulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+   }
+ }
